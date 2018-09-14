@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  grid-template: 
+  'profile search' 100px
+  'profile content' 100px
+  'menus content' 100px
+  'menus content' 1fr
+  / 
+  200px 1fr;
+}
+
+.profile {
+  grid-area: 'profile';
+  background-color: #969a97;
+}
+
+.profile h2 {
+
+}
+
+.profile img {
+  border-radius: 70%;
+  width: 110px;
+}
+
+
+
+
+
+
+.menu {
+  grid-area: 'profile';
+  background-color: #d6d1cd;
+}
+
+.search {
+  grid-area: 'search';
+  grid-template: auto/
+                      100px 1fr 100px 100px 100px;
+  background-color: #3e000c;
+}
+.header {
+  grid-area: 'header';
+  background-color: #e5ece9;
+}
+
+.main {
+  grid-area: 'main';
+  background-color: #f90093;
+}
