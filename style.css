@@ -3,11 +3,12 @@
 }
 
 .container {
+  display: grid;
   grid-template: 
-  'profile search' 100px
-  'profile content' 100px
-  'menus content' 100px
-  'menus content' 1fr
+  'profile search' 130px
+  'profile header' 100px
+  'menu main' 100px
+  'menu main' 1fr
   / 
   200px 1fr;
 }
@@ -17,23 +18,40 @@
   background-color: #969a97;
 }
 
-.profile h2 {
-
+.profile-centering {
+  display: grid;
+  justify-items: center;
+  align-self: center;
 }
 
 .profile img {
   border-radius: 70%;
-  width: 110px;
+  display: block;
+  width: 70px;
+  margin-top: 4%;
 }
 
+.profile p {
+  color: #fff;
+  font-size: 1em;
+  margin: 4px;
+}
 
+.fa-caret-down {
+  color: #fff;
+}
 
+.fa-caret-down:hover {
+  color: #b64d26;
+}
 
+.fa-bars {
+  color: #fff;
+  font-size: 1.5em;
+}
 
-
-.menu {
-  grid-area: 'profile';
-  background-color: #d6d1cd;
+.fa-bars:hover {
+  color: #b64d26;
 }
 
 .search {
@@ -42,12 +60,89 @@
                       100px 1fr 100px 100px 100px;
   background-color: #3e000c;
 }
-.header {
+
+
+
+
+
+
+.fa-user-plus {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-user-plus:hover {
+  color: #b64d26;
+}
+
+.fa-calendar-minus {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-calendar-minus:hover {
+  color: #b64d26;
+}
+
+.fa-grip-vertical {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-grip-vertical:hover {
+  color: #b64d26;
+}
+
+menu {
+  background-color: #d6d1cd;
+  grid-area: 'profile';
+  margin: 0;
+}
+
+.fa-home {
+
+}
+
+.fa-suitcase {
+
+}
+
+.fa-file-alt {
+
+}
+
+.fa-id-badge {
+  
+}
+
+header {
   grid-area: 'header';
   background-color: #e5ece9;
 }
 
-.main {
+header p {
+  display: inline-block;
+}
+.fa-map-marker-alt {
+}
+
+.fa-circle {
+  color: purple;
+}
+
+.fa-save {
+
+}
+
+.fa-pencil-alt {
+
+}
+
+.fa-trash-alt {
+
+}
+
+main {
   grid-area: 'main';
   background-color: #f90093;
 }
