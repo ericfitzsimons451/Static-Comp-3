@@ -5,8 +5,9 @@
 .container {
   display: grid;
   grid-template: 
-  'profile search' 130px
+  'profile nav' 100px
   'profile header' 100px
+  'menu header' 40px
   'menu main' 100px
   'menu main' 1fr
   / 
@@ -14,7 +15,7 @@
 }
 
 .profile {
-  grid-area: 'profile';
+  grid-area: profile;
   background-color: #969a97;
 }
 
@@ -54,16 +55,32 @@
   color: #b64d26;
 }
 
-.search {
-  grid-area: 'search';
-  grid-template: auto/
-                      100px 1fr 100px 100px 100px;
+nav {
+  display: grid;
+  grid-area: nav;
+  grid-template: "one two three four five";
   background-color: #3e000c;
 }
 
+nav .one {
+  grid-area: one;
+}
 
+nav .two {
+  grid-area: two;
+}
 
+nav .three {
+  grid-area: three;
+}
 
+nav .four {
+  grid-area: four;
+}
+
+nav .five {
+  grid-area: five;
+}
 
 
 .fa-user-plus {
@@ -94,36 +111,71 @@
 }
 
 menu {
-  background-color: #d6d1cd;
-  grid-area: 'profile';
+  background-color: #727E93;
+  grid-area: menu;
   margin: 0;
 }
 
-.fa-home {
-
+.menu-first-list,
+.menu-second-list,
+.menu-third-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 }
 
-.fa-suitcase {
-
+menu .fas {
+  color: blue;
 }
 
-.fa-file-alt {
-
+menu .fas:hover {
+  color: #d6d1cd;
 }
 
-.fa-id-badge {
-  
+.square-one {
+  color: blue;
+}
+
+.square-two {
+  color: blue;
+}
+
+.square-three {
+  color: blue;
+}
+
+.square-four {
+  color: blue;
+}
+
+.square-one:hover {
+  color: #d6d1cd;
+}
+
+.square-two:hover {
+  color: #d6d1cd;
+}
+
+.square-three:hover {
+  color: #d6d1cd;
+}
+
+.square-four:hover {
+  color: #d6d1cd;
 }
 
 header {
-  grid-area: 'header';
+  grid-area: header;
   background-color: #e5ece9;
 }
 
 header p {
   display: inline-block;
 }
+
 .fa-map-marker-alt {
+
 }
 
 .fa-circle {
@@ -143,6 +195,6 @@ header p {
 }
 
 main {
-  grid-area: 'main';
+  grid-area: main;
   background-color: #f90093;
 }
