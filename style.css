@@ -5,16 +5,19 @@
 .container {
   display: grid;
   grid-template: 
-  'profile nav' 100px
+  'profile nav' 60px
   'profile header' 100px
   'menu header' 40px
   'menu main' 100px
   'menu main' 1fr
   / 
-  200px 1fr;
+  160px 1fr;
 }
 
 .profile {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
   grid-area: profile;
   background-color: #969a97;
 }
@@ -56,13 +59,33 @@
 }
 
 nav {
-  display: grid;
-  grid-area: nav;
-  grid-template: "one two three four five";
   background-color: #3e000c;
+  display: grid;
+  font-size: 1.2em;
+  grid-area: nav;
+  grid-template: "one two three four five"
+                  / 50px 1fr 50px 50px 50px;
+}
+
+/*.separate {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.nav-icons-left {
+
+}
+
+.nav-icons-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: flex-end;
 }
 
 nav .one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: one;
 }
 
@@ -71,15 +94,33 @@ nav .two {
 }
 
 nav .three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: three;
 }
 
 nav .four {
+  border: 0 1px 0 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: four;
 }
 
 nav .five {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: five;
+}
+
+nav i {
+  color: blue;
+}
+
+nav i:hover {
+  color: #d6d1cd;
 }
 
 
@@ -112,18 +153,40 @@ nav .five {
 
 menu {
   background-color: #727E93;
+  font-size: .9em;
   grid-area: menu;
   margin: 0;
+  padding: 0;
 }
 
 .menu-first-list,
-.menu-second-list,
+.menu-second-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
 .menu-third-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 }
+
+.menu-styling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid;
+}
+
+.menu-styling-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 menu .fas {
   color: blue;
