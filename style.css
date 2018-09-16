@@ -3,51 +3,261 @@
 }
 
 .container {
+  display: grid;
   grid-template: 
-  'profile search' 100px
-  'profile content' 100px
-  'menus content' 100px
-  'menus content' 1fr
+  'profile nav' 60px
+  'profile header' 100px
+  'menu header' 40px
+  'menu main' 100px
+  'menu main' 1fr
   / 
-  200px 1fr;
+  160px 1fr;
 }
 
 .profile {
-  grid-area: 'profile';
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  grid-area: profile;
   background-color: #969a97;
 }
 
-.profile h2 {
-
+.profile-centering {
+  display: grid;
+  justify-items: center;
+  align-self: center;
 }
 
 .profile img {
   border-radius: 70%;
-  width: 110px;
+  display: block;
+  width: 70px;
+  margin-top: 4%;
 }
 
-
-
-
-
-
-.menu {
-  grid-area: 'profile';
-  background-color: #d6d1cd;
+.profile p {
+  color: #fff;
+  font-size: 1em;
+  margin: 4px;
 }
 
-.search {
-  grid-area: 'search';
-  grid-template: auto/
-                      100px 1fr 100px 100px 100px;
+.fa-caret-down {
+  color: #fff;
+}
+
+.fa-caret-down:hover {
+  color: #b64d26;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-bars:hover {
+  color: #b64d26;
+}
+
+nav {
   background-color: #3e000c;
+  display: grid;
+  font-size: 1.2em;
+  grid-area: nav;
+  grid-template: "one two three four five"
+                  / 50px 1fr 50px 50px 50px;
 }
-.header {
-  grid-area: 'header';
+
+/*.separate {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.nav-icons-left {
+
+}
+
+.nav-icons-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: flex-end;
+}
+
+nav .one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: one;
+}
+
+nav .two {
+  grid-area: two;
+}
+
+nav .three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: three;
+}
+
+nav .four {
+  border: 0 1px 0 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: four;
+}
+
+nav .five {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: five;
+}
+
+nav i {
+  color: blue;
+}
+
+nav i:hover {
+  color: #d6d1cd;
+}
+
+
+.fa-user-plus {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-user-plus:hover {
+  color: #b64d26;
+}
+
+.fa-calendar-minus {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-calendar-minus:hover {
+  color: #b64d26;
+}
+
+.fa-grip-vertical {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.fa-grip-vertical:hover {
+  color: #b64d26;
+}
+
+menu {
+  background-color: #727E93;
+  font-size: .9em;
+  grid-area: menu;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-first-list,
+.menu-second-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.menu-third-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.menu-styling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid;
+}
+
+.menu-styling-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+menu .fas {
+  color: blue;
+}
+
+menu .fas:hover {
+  color: #d6d1cd;
+}
+
+.square-one {
+  color: blue;
+}
+
+.square-two {
+  color: blue;
+}
+
+.square-three {
+  color: blue;
+}
+
+.square-four {
+  color: blue;
+}
+
+.square-one:hover {
+  color: #d6d1cd;
+}
+
+.square-two:hover {
+  color: #d6d1cd;
+}
+
+.square-three:hover {
+  color: #d6d1cd;
+}
+
+.square-four:hover {
+  color: #d6d1cd;
+}
+
+header {
+  grid-area: header;
   background-color: #e5ece9;
 }
 
-.main {
-  grid-area: 'main';
+header p {
+  display: inline-block;
+}
+
+.fa-map-marker-alt {
+
+}
+
+.fa-circle {
+  color: purple;
+}
+
+.fa-save {
+
+}
+
+.fa-pencil-alt {
+
+}
+
+.fa-trash-alt {
+
+}
+
+main {
+  grid-area: main;
   background-color: #f90093;
 }
