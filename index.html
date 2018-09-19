@@ -89,76 +89,93 @@
       </div>
     </header>
 
-    <main>
-      <div class='graph-styling'>
-       <div class="flex-wrapper">
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart orange">
-            <path class="circle-bg"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <path class="circle"
-              stroke-dasharray="30, 100"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <text x="18" y="18.35" class="percentage">1,589</text>
-            <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
+<main>
+  <section class="charts-and-graph">
+    
+    <div class="circles-container">
+      <div class='circles'>
+        <div class="flex-wrapper">
 
-          </svg>
-        </div>
-        
+          <div class="chart">
+            <svg viewBox="0 0 36 36" class="circular-chart teal">
+              <path class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="30, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="18.35" class="percentage">1,589</text>
+              <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
+            </svg>
+          </div>
+          
+          <div class="chart">
+            <svg viewBox="0 0 36 36" class="circular-chart blue">
+              <path class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="60, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="18.35" class="percentage">3,154</text>
+              <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
+            </svg>
+          </div>
 
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart green">
-            <path class="circle-bg"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <path class="circle"
-              stroke-dasharray="60, 100"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <text x="18" y="18.35" class="percentage">3,154</text>
-            <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
+          <div class="chart">
+            <svg viewBox="0 0 36 36" class="circular-chart purple">
+              <path class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="90, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="18.35" class="percentage">8,888</text>
+              <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
+            </svg>
+          </div>
 
-          </svg>
-        </div>
-
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart blue">
-            <path class="circle-bg"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <path class="circle"
-              stroke-dasharray="90, 100"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <text x="18" y="18.35" class="percentage">8,888</text>
-            <text x="18" y="23" class="bottom-of-circle-text">APPLICANTS</text>
-          </svg>
         </div>
       </div>
-      <div class='graph'>
-        <img src='images/graph.png' alt='bar graph'>
-      </div>
+      <p class='chart-label'>TOTALS - Out of 5,289 views</p>
     </div>
+
+    <div class='graph'>
+      <img src='images/graph.png' alt='bar graph'>
+      <p class='chart-label'>APPLICANTS / DAYS</p>
+    </div>
+  </section>
+
+
+
+
+
+<!-- ====================================================== -->
+
+
     <div class='table-social-media-flex'>
       <div class="table-styling">
         <table>
           <thead>
             <tr>
-              <th colspan="2">JOB DESCRIPTION<span class='header-edit-icon'><i class="fas fa-pencil-alt"> EDIT</i></span></th>
+              <th>JOB DESCRIPTION</th>
+
+              <th><span class='header-edit-icon'><i class="fas fa-pencil-alt"> EDIT</i></span></th>
             </tr>
           </thead>
           <tbody>
@@ -197,20 +214,49 @@
           </tbody>
         </table>
       </div>
-      <div clas="header-right-side">
+
+
+      <div class="header-right-side">
         <div class='social-media-boxes'>
-          <i class="fab fa-facebook-f"><p>Post to Facebook</p></i>
-          <i class="fab fa-twitter">Tweet this Job</i>
-          <i class="fab fa-linkedin-in">Post to Linkedin</i>
+          <button class='facebook'><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+          <button class='twitter'><i class="fab fa-twitter"></i>Tweet this Job</button>
+          <button class='linkedin'><i class="fab fa-linkedin-in"></i>Post to Linkedin</button>
         </div>
-        <div class='link-and-search-container'>
+
+
+
+        <div class='link-to-this-job-container'>
           <div class='link-and-search'>
-            <i class="fas fa-globe-americas">Link to this Job</i>
+            <h3><i class="fas fa-globe-americas"></i>Link to this Job</h3>
             <p>Lorem ipsum dolor sit amet, consecutive addition of cing it ad dominum is awesome.com</p>
           </div>
-          <input type='text' placeholder="http://loremipsul.dol/sit" >
+          <div>
+            <input type='text' placeholder="http://loremipsul.dol/sit" >
+            <span><p>Copy</p></span>
+          </div>
+        </div>
+
+
+        <div class='use-the-button-container'>
+          <div class='use-the-button-widget'>
+            <i class="far fa-newspaper"> Use the Button Widget</i>
+            <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+          </div>
+          <input type='text' placeholder="<script type='text/javascript'>" >
           <span><p>Copy</p></span>
         </div>
+
+
+
+        <div class='upload-resumes-container'>
+          <div class='upload-resumes-by-email'>
+            <i class="fas fa-paper-plane"> Upload Resumes by Email</i>
+            <p>You can automatically upload multiple resumes to this job by emailing the adresses below.</p>
+          </div>
+          <input type='text' placeholder="tomtizzy@gmail.com" >
+        </div>
+
+
       </div>
     </div>
 

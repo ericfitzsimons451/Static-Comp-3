@@ -318,23 +318,41 @@ div span i {
 
 /* Circles that kill me*/
 
-
-.flex-wrapper {
+.charts-and-graph {
   display: flex;
-  flex-flow: row nowrap;
+  padding: 30px;
+}
+
+.charts-and-graph > div {
   width: 50%;
 }
 
-.single-chart {
+.circles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circles {
+  width: 100%;
+}
+
+
+.flex-wrapper {
+/*  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;*/
+}
+
+.chart {
   width: 33%;
   justify-content: space-around ;
 }
 
 .circular-chart {
   display: block;
-  margin: 50px auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 160px;
+  max-height: 160px;
 }
 
 .circle-bg {
@@ -344,6 +362,7 @@ div span i {
 }
 
 .circle {
+  max-height: 160px;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
@@ -356,16 +375,16 @@ div span i {
   }
 }
 
-.circular-chart.orange .circle {
-  stroke: #ff9f00;
-}
-
-.circular-chart.green .circle {
-  stroke: #4CC790;
+.circular-chart.teal .circle {
+  stroke: #39BBB9;
 }
 
 .circular-chart.blue .circle {
-  stroke: #3c9ee5;
+  stroke: #1399F7;
+}
+
+.circular-chart.purple .circle {
+  stroke: #A95DAA;
 }
 
 .percentage {
@@ -378,7 +397,7 @@ div span i {
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
+  max-height: 200px;
 }
 .circle-charts {
   padding: 30px;
@@ -391,19 +410,23 @@ div span i {
   text-anchor: middle;
 }
 
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .graph img {
   width: 450px;
-  padding: 30px;
 }
 
 .graph-styling {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .table-styling {
-  width: 450px;
-  margin-left: 30px;
 }
 
 table {
@@ -411,16 +434,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
+  margin-right: 30px;
 }
 
-thead th {
-  width: 400px;
-  display: flex;
-  flex-direction: flex-start:;
+thead tr {
+  height: 50px;
 }
 
 td {
-  padding: 10px;
+  padding: 1em;
 }
 
 td img {
@@ -431,12 +453,11 @@ td img {
 th {
   background-color: #64738A;
   color: #E1E9F0;
-  float: left;
-  padding: 10px;
+  text-align: left;
+  padding-left: 1em;
 }
 th span {
   background-color: #6F7D99;
-  margin-left: 15px;
   padding: 3px;
 }
 
@@ -456,48 +477,110 @@ tr {
 .table-social-media-flex {
   display: flex;
   justify-content: space-between;
+  padding: 30px;
 }
 
+
+
+
+
+
+
+
 .header-right-side {
-  display: flex;
-  justify-content: center;
+  margin-left: 30px;
 }
+
+
+
 
 .social-media-boxes {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding-left: 150px;
+}
+
+.social-media-boxes button {
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+}
+
+button.facebook {
+  background-color: #4163BA; 
+}
+
+button.twitter {
+  background-color: #00A2EE;
+  margin: 15px 0;
+}
+
+button.linkedin {
+  background-color: #0677B4;
+  margin-bottom: 15px;
+}
+
+button.facebook:hover {
+  background-color: #4163dd; 
+}
+
+button.twitter:hover {
+  background-color: #00A2aa;
+  margin: 15px 0;
+}
+
+button.linkedin:hover {
+  background-color: #0677dd;
+  margin-bottom: 15px;
 }
 
 .fa-facebook-f {
-  background-color: #4163BA;
   padding: 20px;
 } 
 
-.fa-facebook-f p {
-  display: inline;
-}
-
 .fa-twitter {
-  background-color: #00A2EE;
   padding: 20px;
-  margin: 20px 0;
-}
+ }
 
 .fa-linkedin-in {
-  background-color: #0677B4;
   padding: 20px;
-  margin-bottom: 20px;
 }
 
-.link-and-search-container {
+/*.link-and-search, 
+.use-the-button-widget,
+.upload-resumes-by-email {
+  margin-bottom: 10px;
+}*/
+
+.link-and-search h3, 
+.use-the-button-widget h3,
+.upload-resumes-by-email h3 {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+/*.link-and-search i, 
+.use-the-button-widget i,
+.upload-resumes-by-email i {
+  margin-bottom: 10px;
+}
+*/
+
+.link-to-this-job-container {
   border-bottom: 1px solid black;
-  margin: 0 30px;
+  /*margin: 0 30px;*/
 }
 
+.use-the-button-container {
+  border-bottom: 1px solid black;
+  margin: 25px 0;
+}
 
-
+.upload-resumes-container {
+  border-bottom: 1px solid black;
+  /*margin: 0 30px;*/
+}
 
 
 
