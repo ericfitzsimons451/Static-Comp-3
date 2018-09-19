@@ -65,14 +65,7 @@ nav {
   display: flex;
   font-size: 1.2em;
   grid-area: nav;
-  /*grid-template: "one two three four five"
-                  / 50px 1fr 50px 50px 50px;*/
 }
-
-/*.separate {
-  display: flex;
-  justify-content: space-between;
-}*/
 
 .nav > *:not(:first-child) {
   border-left: 1px solid #93959E;
@@ -315,7 +308,10 @@ div span i {
   color: purple;
 }
 
-
+main {
+  grid-area: main;
+  background-color: #EEF2F6;
+}
 /* Circles that kill me*/
 
 .charts-and-graph {
@@ -335,13 +331,6 @@ div span i {
 
 .circles {
   width: 100%;
-}
-
-
-.flex-wrapper {
-/*  display: flex;
-  flex-flow: row nowrap;
-  width: 50%;*/
 }
 
 .chart {
@@ -547,48 +536,110 @@ button.linkedin:hover {
   padding: 20px;
 }
 
-/*.link-and-search, 
-.use-the-button-widget,
-.upload-resumes-by-email {
-  margin-bottom: 10px;
-}*/
-
 .link-and-search h3, 
 .use-the-button-widget h3,
 .upload-resumes-by-email h3 {
   margin-bottom: 10px;
   font-family: sans-serif;
-}
+  color: #6D737F;
+/*  margin-top: 0px;
+*/}
 
-/*.link-and-search i, 
+.link-and-search i, 
 .use-the-button-widget i,
 .upload-resumes-by-email i {
-  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #6D737F;
 }
-*/
+
+.link-and-search p, 
+.use-the-button-widget p,
+.upload-resumes-by-email p {
+  color: #6D737F;
+  margin-bottom: 9px;
+}
 
 .link-to-this-job-container {
   border-bottom: 1px solid black;
   /*margin: 0 30px;*/
 }
 
-.use-the-button-container {
-  border-bottom: 1px solid black;
-  margin: 25px 0;
+.search-copy-styling {
+  display: inline-block;
 }
 
-.upload-resumes-container {
+.search-copy-styling input {
+  height: 45px;
+  width: 300px;
+}
+
+.search-copy {
+  display: inline-block;
+  height: 45px;
+  width: 60px;
+  background-color: #3CB1BC;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.use-the-button-container {
   border-bottom: 1px solid black;
+  margin: 5px 0;
+}
+
+.use-the-button-widget {
+  margin-top: 0px;
+}
+
+.upload-resumes-container input {
+  height: 45px;
+  width: 300px;
+  justify-content: center;
+  /*border-bottom: 1px solid black;*/
   /*margin: 0 30px;*/
 }
 
+@media screen and (max-width: 1120px) {
+  .charts-and-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .graph img {
+    width: 600px;
+  }
 
+  .table-social-media-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+  .header-right-side {
+    display: flex;
+    flex-wrap: all;
+  }
+  .social-media-boxes {
+    margin: 30px 30px 0px 0px;
+  }
 
+}
 
+@media screen and (max-width: 980px) {
+  .container {
+  grid-template: 
+  'profile nav' 60px
+  'profile header' 100px
+  'menu header' 40px
+  'menu main' 100px
+  'menu main' 1fr
+  / 
+  160px 1fr;
+  font-family: sans-serif;
+}
 
-
-
-main {
-  grid-area: main;
-  background-color: #EEF2F6;
+ /* .nav .two {
+    width: 370px;
+  }*/
 }
